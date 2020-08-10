@@ -52,7 +52,14 @@
                </a>
             </div>
 
+        
             <nav id="nav-wrap">
+               <?php wp_nav_menu(array( 
+                  'theme_location' => 'top',
+                  'container'=> null,
+                  'menu_class' => 'menu',
+                  'menu_id'=> 'nav',
+               )); ?>
 
                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
